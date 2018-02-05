@@ -5,7 +5,7 @@ module.exports.fizzBuzzFunction = function (number) {
     if(number ===5){
         return "buzz"
     }
-    return 1
+    return number
 }
 
 function fizz () {

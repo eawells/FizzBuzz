@@ -13,4 +13,9 @@ describe("fizzBuzz", function() {
        var actual = fizzBuzz(5);
        expect(actual).toBe("buzz");
     });
+    it("says 2 when given 2", function () {
+       var actual = fizzBuzz(2);
+       expect(actual).toBe(2);
+    });
+
 });
