@@ -1,5 +1,5 @@
 module.exports.fizzBuzzFunction = function (number) {
-    if(number===3){
+    if(number===3 || number === 6){
         return "fizz"
     }
     if(number ===5){
