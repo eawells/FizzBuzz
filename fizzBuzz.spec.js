@@ -9,4 +9,8 @@ describe("fizzBuzz", function() {
        var actual = fizzBuzz(3);
        expect(actual).toBe("fizz");
     });
+    it("says buzz when given 5", function () {
+       var actual = fizzBuzz(5);
+       expect(actual).toBe("buzz");
+    });
 });
