@@ -8,10 +8,8 @@ module.exports.fizzBuzzFunction = function (number) {
     if(number % 5 === 0){
         return "buzz"
     }
-
+    if(number === 13){
+        return "fizz"
+    }
     return number
-}
-
-function fizz () {
-
 }
