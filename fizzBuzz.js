@@ -1,13 +1,14 @@
 module.exports.fizzBuzzFunction = function (number) {
-    if(number === 3 || number === 6){
-        return "fizz"
-    }
-    if(number === 5 || number === 10){
-        return "buzz"
-    }
-    if(number === 15 || number === 30){
+    if(number % 5 === 0 && number % 3 === 0){
         return "fizzbuzz"
     }
+    if(number % 3 === 0){
+        return "fizz"
+    }
+    if(number % 5 === 0){
+        return "buzz"
+    }
+
     return number
 }
 
