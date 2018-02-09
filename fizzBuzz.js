@@ -6,7 +6,7 @@ module.exports.fizzBuzzFunction = function (number) {
     if(numberIsDivisibleByThreeOrContainsA3(number)){
         return "fizz"
     }
-    if(numberIsDivisibleBy5(number)) {
+    if(numberIsDivisibleByFiveOrContainsA5(number)) {
         return "buzz"
     }
 
@@ -25,10 +25,18 @@ function numberIsDivisibleBy3(number) {
     return number % 3 === 0
 }
 
+function numberIsDivisibleByThreeOrContainsA3(number) {
+    return numberIsDivisibleBy3(number) || numberContains3(number)
+}
+
 function numberContains3(number) {
     return number.toString().indexOf("3")>-1
 }
 
-function numberIsDivisibleByThreeOrContainsA3(number) {
-    return numberIsDivisibleBy3(number) || numberContains3(number)
+function numberIsDivisibleByFiveOrContainsA5(number) {
+    return numberIsDivisibleBy5(number) || numberContains5(number)
+}
+
+function numberContains5(number) {
+    return number.toString().indexOf("5") > -1
 }

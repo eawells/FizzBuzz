@@ -42,4 +42,9 @@ describe("fizzBuzz", function() {
         expect(actual).toBe("fizz");
     });
 
+    it("says buzz when given 52", function () {
+        var actual = fizzBuzz(52);
+        expect(actual).toBe("buzz");
+    });
+
 });
