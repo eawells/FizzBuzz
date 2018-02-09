@@ -33,9 +33,13 @@ describe("fizzBuzz", function() {
        var actual = fizzBuzz(30);
        expect(actual).toBe("fizzbuzz");
     });
-    it("says fizzbuzz when given 13", function () {
+    it("says fizz when given 13", function () {
        var actual = fizzBuzz(13);
        expect(actual).toBe("fizz");
+    });
+    it("says fizz when given 23", function () {
+        var actual = fizzBuzz(23);
+        expect(actual).toBe("fizz");
     });
 
 });
